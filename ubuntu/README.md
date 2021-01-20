@@ -1,5 +1,7 @@
 # kamitanilab/ubuntu
 
+Docker Hub: <https://hub.docker.com/r/kamitanilab/ubuntu>
+
 Ubuntu image (20.04)
 
 `sudo` is available in the container running with `-u` option.
