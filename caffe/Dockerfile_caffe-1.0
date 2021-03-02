@@ -38,7 +38,6 @@ RUN pip3 install numpy scipy scikit-learn scikit-image google-api-core lmdb
 
 # Copy caffe built on docker
 COPY caffe-1.0_docker_cuda11.0.3-cudnn8-devel-ubuntu20.04  /caffe/caffe-1.0
-COPY caffe-fr-chairs-deepsim_docker_cuda11.0.3-cudnn8-devel-ubuntu20.04 /caffe/caffe-fr-chairs-deepsim
 
 # set path to default caffe
 RUN echo "# set path to default caffe" >> /etc/bash.bashrc
