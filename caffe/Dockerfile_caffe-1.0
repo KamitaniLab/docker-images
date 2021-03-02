@@ -42,7 +42,7 @@ COPY caffe-1.0_docker_cuda11.0.3-cudnn8-devel-ubuntu20.04  /caffe/caffe-1.0
 # set path to default caffe
 RUN echo "# set path to default caffe" >> /etc/bash.bashrc
 RUN echo "export PYTHONPATH=/caffe/caffe-1.0/python" >> /etc/bash.bashrc
-
+RUN echo "export LD_LIBRARY_PATH=/caffe/caffe-1.0/build/lib:$LD_LIBRARY_PATH" >> /etc/bash.bashrc
 
 # setup user 
 RUN echo "${USER_NAME} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/${USER_NAME}
