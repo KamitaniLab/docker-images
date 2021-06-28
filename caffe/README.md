@@ -13,6 +13,7 @@ For caffe-deepsim:
 To run,
 ```shell
 docker run --rm -it -u $(id -u):$(id -g) \
+  --gpus 0 \
   -v ${PATH_TO_MODEL}:/model \
   -v ${PATH_TO_WORK_DIR}:/home/user/work:rw \
   kamitanilab/caffe-cuda11
